@@ -1,8 +1,9 @@
 name: Github Env Info
 on: workflow_dispatch
 jobs:
-  collect-info:
+  CollectInfo:
     runs-on: ubuntu-latest
+    steps:
     - name: Display GitHub Env Variables
       run: echo "${{ toJSON(github) }}
       
